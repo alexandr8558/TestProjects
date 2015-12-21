@@ -1,0 +1,11 @@
+D:\Sources\Whether\Football\bin\Debug\Football.exe.config
+D:\Sources\Whether\Football\bin\Debug\Football.exe
+D:\Sources\Whether\Football\bin\Debug\Football.pdb
+D:\Sources\Whether\Football\obj\Debug\Football.exe
+D:\Sources\Whether\Football\obj\Debug\Football.pdb
+E:\Source Code\TestProjects\Football\bin\Debug\Football.exe.config
+E:\Source Code\TestProjects\Football\obj\Debug\Football.exe
+E:\Source Code\TestProjects\Football\obj\Debug\Football.pdb
+E:\Source Code\TestProjects\Football\obj\Debug\Football.csprojResolveAssemblyReference.cache
+E:\Source Code\TestProjects\Football\bin\Debug\Football.exe
+E:\Source Code\TestProjects\Football\bin\Debug\Football.pdb
