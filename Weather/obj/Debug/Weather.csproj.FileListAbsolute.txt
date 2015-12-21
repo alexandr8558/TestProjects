@@ -1,0 +1,10 @@
+e:\Source Code\TestProjects\Whether\bin\Debug\Whether.exe.config
+e:\Source Code\TestProjects\Whether\bin\Debug\Whether.exe
+e:\Source Code\TestProjects\Whether\obj\Debug\Whether.exe
+e:\Source Code\TestProjects\Whether\obj\Debug\Whether.pdb
+e:\Source Code\TestProjects\Whether\bin\Debug\Whether.pdb
+E:\Source Code\TestProjects\Weather\bin\Debug\Whether.exe.config
+E:\Source Code\TestProjects\Weather\obj\Debug\Whether.exe
+E:\Source Code\TestProjects\Weather\obj\Debug\Whether.pdb
+E:\Source Code\TestProjects\Weather\bin\Debug\Whether.exe
+E:\Source Code\TestProjects\Weather\bin\Debug\Whether.pdb
