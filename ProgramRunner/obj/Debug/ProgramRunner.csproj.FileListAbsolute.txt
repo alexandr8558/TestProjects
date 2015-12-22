@@ -1,0 +1,12 @@
+E:\Source Code\TestProjects\ProgramRunner\bin\Debug\ProgramRunner.exe.config
+E:\Source Code\TestProjects\ProgramRunner\obj\Debug\ProgramRunner.csprojResolveAssemblyReference.cache
+E:\Source Code\TestProjects\ProgramRunner\bin\Debug\ProgramRunner.exe
+E:\Source Code\TestProjects\ProgramRunner\bin\Debug\ProgramRunner.pdb
+E:\Source Code\TestProjects\ProgramRunner\bin\Debug\Football.exe
+E:\Source Code\TestProjects\ProgramRunner\bin\Debug\Whether.exe
+E:\Source Code\TestProjects\ProgramRunner\bin\Debug\Common.dll
+E:\Source Code\TestProjects\ProgramRunner\bin\Debug\Football.pdb
+E:\Source Code\TestProjects\ProgramRunner\bin\Debug\Whether.pdb
+E:\Source Code\TestProjects\ProgramRunner\bin\Debug\Common.pdb
+E:\Source Code\TestProjects\ProgramRunner\obj\Debug\ProgramRunner.exe
+E:\Source Code\TestProjects\ProgramRunner\obj\Debug\ProgramRunner.pdb

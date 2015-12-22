@@ -9,3 +9,5 @@ E:\Source Code\TestProjects\Weather\obj\Debug\Whether.pdb
 E:\Source Code\TestProjects\Weather\bin\Debug\Whether.exe
 E:\Source Code\TestProjects\Weather\bin\Debug\Whether.pdb
 E:\Source Code\TestProjects\Weather\obj\Debug\Weather.csprojResolveAssemblyReference.cache
+e:\Source Code\TestProjects\Weather\bin\Debug\Common.dll
+e:\Source Code\TestProjects\Weather\bin\Debug\Common.pdb

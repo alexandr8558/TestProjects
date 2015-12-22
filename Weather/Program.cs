@@ -1,9 +1,10 @@
 ﻿using System;
 using System.IO;
+using Common;
 
 namespace Weather
 {
-    class Program
+    public class Program
     {
         #region Fieds
 
@@ -15,41 +16,45 @@ namespace Weather
 
         #region Methods
 
-        static void Main( string[] args )
+        public static void Main(string[] args)
         {
-            DailyWeather minDifferenceWeather;
+            StatisticItem minDifferenceWeather;
 
-            splitter = '\t';            
+            splitter = '\t';
             parser = new Parser();
 
-            minDifferenceWeather = GetMinDifferenceWeather( args[ 0 ] );
+            minDifferenceWeather = GetMinDifferenceWeather(args[0]);
 
-            Console.WriteLine(String.Format("{0} day is the day with min difference between Max and Min temperature equal {1}.", 
-                minDifferenceWeather.Day, minDifferenceWeather.Difference));
+            Console.WriteLine(String.Format("{0} day is the day with min difference between Max and Min temperature equal {1}.",
+                minDifferenceWeather.Description, minDifferenceWeather.SecondValue - minDifferenceWeather.FirstValue));
         }
 
-        private static DailyWeather GetMinDifferenceWeather( string filePath )
+        private static StatisticItem GetMinDifferenceWeather(string filePath)
         {
             StreamReader reader;
-            DailyWeather resultWeather;
-            DailyWeather currentWhether;
+            StatisticItem? resultWeather;
+            StatisticItem currentWhether;
 
+            resultWeather = null;
             using (reader = new StreamReader(filePath))
             {
-                reader.ReadLine();
-                resultWeather = parser.Parse(reader.ReadLine(), splitter);
-
                 while (!reader.EndOfStream)
                 {
-                    currentWhether = parser.Parse(reader.ReadLine(), splitter);
-
-                    if (currentWhether.Difference < resultWeather.Difference)
+                    if (parser.TryParse(reader.ReadLine(), splitter, 0, 1, 2, out currentWhether))
                     {
-                        resultWeather = currentWhether;
+                        if (!resultWeather.HasValue || GetTemperatureDifference( currentWhether ) < GetTemperatureDifference( resultWeather.Value ))
+                        {
+                            resultWeather = currentWhether;
+                        }
                     }
-                }                
+                }
             }
-            return resultWeather;
+            return resultWeather.Value;
+        }
+
+        private static int GetTemperatureDifference( StatisticItem item )
+        {
+            return item.SecondValue - item.FirstValue;
         }
 
         #endregion

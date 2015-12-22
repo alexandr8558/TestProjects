@@ -9,3 +9,5 @@ E:\Source Code\TestProjects\Football\obj\Debug\Football.pdb
 E:\Source Code\TestProjects\Football\obj\Debug\Football.csprojResolveAssemblyReference.cache
 E:\Source Code\TestProjects\Football\bin\Debug\Football.exe
 E:\Source Code\TestProjects\Football\bin\Debug\Football.pdb
+e:\Source Code\TestProjects\Football\bin\Debug\Common.dll
+e:\Source Code\TestProjects\Football\bin\Debug\Common.pdb

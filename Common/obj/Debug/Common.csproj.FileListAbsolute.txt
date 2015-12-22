@@ -1,0 +1,4 @@
+E:\Source Code\TestProjects\Common\bin\Debug\Common.dll
+E:\Source Code\TestProjects\Common\bin\Debug\Common.pdb
+E:\Source Code\TestProjects\Common\obj\Debug\Common.dll
+E:\Source Code\TestProjects\Common\obj\Debug\Common.pdb

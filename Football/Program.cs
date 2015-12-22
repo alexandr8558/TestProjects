@@ -1,9 +1,10 @@
 ﻿using System;
 using System.IO;
+using Common;
 
 namespace Football
 {
-    class Program
+    public class Program
     {
         #region Fieds
 
@@ -15,33 +16,33 @@ namespace Football
 
         #region Methods
 
-        static void Main( string[] args )
+        public static void Main(string[] args)
         {
-            TeamResult result;
-            
+            StatisticItem result;
+
             parser = new Parser();
             splitter = ' ';
 
             result = GetTeamWithMinDifference(args[0]);
-            
+
             Console.WriteLine(String.Format("{0} is the team with min difference between scored and missed goals equal {1}.",
-               result.Name, result.Difference));
+               result.Description, result.FirstValue - result.SecondValue));
         }
 
-        private static TeamResult GetTeamWithMinDifference( string filePath )
+        private static StatisticItem GetTeamWithMinDifference(string filePath)
         {
             StreamReader reader;
-            TeamResult currentResult;
-            TeamResult? result;
+            StatisticItem currentResult;
+            StatisticItem? result;
 
             result = null;
-            using ( reader = new StreamReader( filePath ) )
+            using (reader = new StreamReader(filePath))
             {
                 while (!reader.EndOfStream)
                 {
-                    if (parser.TryParse(reader.ReadLine(), splitter, out currentResult))
+                    if (parser.TryParse(reader.ReadLine(), splitter, 1, 6, 8, out currentResult))
                     {
-                        if (!result.HasValue || currentResult.Difference < result.Value.Difference)
+                        if (!result.HasValue || GetGoalDifference(currentResult) < GetGoalDifference(result.Value))
                         {
                             result = currentResult;
                         }
@@ -52,6 +53,11 @@ namespace Football
             return result.Value;
         }
 
+        private static int GetGoalDifference(StatisticItem item)
+        {
+            return item.FirstValue - item.SecondValue;
+        }
+
         #endregion
-    }   
+    }
 }
